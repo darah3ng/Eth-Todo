@@ -32,8 +32,6 @@ contract('TodoList', (accounts) => {
     assert.equal(task.completed, true);
     
     const event = result.logs[0].args;
-    console.log("🚀 ~ event", result.logs[0])
-    
 
     assert.equal(event.id.toNumber(), 1);
     assert.equal(event.completed, true);
